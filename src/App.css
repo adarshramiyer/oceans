@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: Alkatra;
+  src: url('./fonts/Alkatra-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Prompt;
+  src: url('./fonts/Prompt-MediumItalic.ttf');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -9,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #121216;
+  background-image: linear-gradient(180deg, #121212, #121232);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,16 +29,36 @@
   color: white;
 }
 
+.ToolsAndData-overall {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .mapImage {
-  height: 50vh;
+  width: 50vw;
   border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mid-table-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.large-text {
+  font-family: Prompt;
+  font-weight: 700;
+  font-size: 10vh;
+  background-image: linear-gradient(0deg, #83aec8, #ffffff);
+  background-clip: text;
+  color: transparent;
+}
+
+.medium-text {
+
+}
+
+.normal-text {
+
 }
