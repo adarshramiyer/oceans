@@ -1,3 +1,3 @@
 # Oceans
 
-website for live ocean current forecasting
+pilot website for ocean current forecasting
