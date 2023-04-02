@@ -7,16 +7,20 @@ import { Component } from 'react';
 class TitleBar extends React.Component {
   render() {
     return (<div>
-      <a className='large-text'>Oceans</a>
+      <a className='large-text'>OceanTrack</a>
     </div>)
   }
 }
 
 class AboutLeft extends React.Component {
   render() {
-    return(<div>
-            <a>
-              this is the about / text section
+    return(<div className='limit-width'>
+            <a className='normal-text'>
+              OceanTrack uses data from NASA's OSCAR dataset to forecast the path of trash through the ocean, with the goals of (1) promoting accountability and publicity
+              and (2) identifying areas where trash flows close to coasts for easier cleanup operations.
+              The forecasting algorithm utilizes a grid-based vector field for surface current drift and wind, 
+              interpolating based on euclidean distance and incorporating random perturbations to stochastically predict a trajectory. Try OceanTrack for yourself
+              here and learn more at <a href='https://github.com/adarshramiyer/oceans'>this link</a>
             </a>
           </div>
       )
@@ -26,13 +30,13 @@ class AboutLeft extends React.Component {
 class ToolsAndData extends React.Component {
   render() {
     return(<div className='ToolsAndData-overall'>
-      <a>
-        this is the tools and data section
-      </a>
-      <img src = {testMap} className='mapImage' alt="Logo"/>
+        <img src = {testMap} className='mapImage' alt="Logo"/>      
         <a>
-          image caption
-        </a>
+        Interactive Forecasting:
+        <input type='number' placeholder='latitude' className='input-format'/>
+        <input type='number' placeholder='longitude' className='input-format'/>
+        <button type='button' className='button'>Forecast</button>
+      </a>
     </div>
     )
   }
@@ -42,8 +46,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TitleBar/>
+        <TitleBar className='large-text'/>
         <table border='0px'>
+          <tr>
+            <td className='transparent-text'>
+              helo
+            </td>
+          </tr>
           <tr>
             <td>
               <AboutLeft/>
