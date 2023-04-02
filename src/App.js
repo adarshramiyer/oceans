@@ -46,6 +46,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <a className='transparent-text'>
+          placeholder
+        </a>
         <TitleBar className='large-text'/>
         <table border='0px'>
           <tr>
